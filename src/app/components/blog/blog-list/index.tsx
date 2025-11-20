@@ -39,7 +39,7 @@ const BlogList = () => {
                                             />
                                         </div>
                                         <div className="flex flex-col gap-1">
-                                            <span className="text-secondary/70 dark:text-white/70">{formattedDate}</span>
+                                            <span className="text-secondary-text/70 dark:text-white/70">{formattedDate}</span>
                                             <h4>{value.title}</h4>
                                         </div>
                                     </div>

@@ -260,24 +260,24 @@ The Range Rover's engine bay is now spotless and protected, showcasing the vehic
                                 <div>
                                     <Link href="/projects" className="group flex gap-3 items-center w-fit bg-primary hover:bg-secondary dark:border dark:border-primary dark:hover:border dark:hover:border-white/30 rounded-full transition-all duration-500 ease-in-out">
                                         <Image src={"/images/Icon/back-btn.svg"} alt="Image" width={42} height={42} className="group-hover:translate-x-16.5 transform transition-transform duration-500 ease-in-out" />
-                                        <span className="pr-4 text-lg font-bold text-secondary group-hover:text-white group-hover:-translate-x-10 transform transition-transform duration-500 ease-in-out">Back</span>
+                                        <span className="pr-4 text-lg font-bold text-secondary-text group-hover:text-white group-hover:-translate-x-10 transform transition-transform duration-500 ease-in-out">Back</span>
                                     </Link>
                                 </div>
                                 <div className="flex flex-col md:flex-row gap-5 lg:gap-10">
                                     <div className="flex flex-col gap-2 border-b md:border-b-0 md:border-r border-secondary/12 dark:border-white/12 pb-5 md:pr-5 lg:pr-10">
-                                        <span className="text-base text-secondary/70 dark:text-white/70">Scope of work</span>
+                                        <span className="text-base text-secondary-text/70 dark:text-white/70">Scope of work</span>
                                         <p className="font-medium">{project.ScopeOfWork.join(", ")}</p>
                                     </div>
                                     <div className="flex flex-col gap-2 border-b md:border-b-0 md:border-r border-secondary/12 dark:border-white/12 pb-5 md:pr-5 lg:pr-10">
-                                        <span className="text-base text-secondary/70 dark:text-white/70">Vehicle Type</span>
+                                        <span className="text-base text-secondary-text/70 dark:text-white/70">Vehicle Type</span>
                                         <p className="font-medium">{project.industry}</p>
                                     </div>
                                     <div className="flex flex-col gap-2 border-b md:border-b-0 md:border-r border-secondary/12 dark:border-white/12 pb-5 md:pr-5 lg:pr-10">
-                                        <span className="text-base text-secondary/70 dark:text-white/70">Service Cost</span>
+                                        <span className="text-base text-secondary-text/70 dark:text-white/70">Service Cost</span>
                                         <p className="font-medium">{project.raised}</p>
                                     </div>
                                     <div className="flex flex-col gap-2">
-                                        <span className="text-base text-secondary/70 dark:text-white/70">Contact</span>
+                                        <span className="text-base text-secondary-text/70 dark:text-white/70">Contact</span>
                                         <p className="font-medium">{project.website}</p>
                                     </div>
                                 </div>

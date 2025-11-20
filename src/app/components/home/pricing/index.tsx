@@ -34,14 +34,14 @@ const [pricingData, setPricingData] = useState<any>(null);
                         <div className="flex flex-col gap-14 xl:gap-24">
                             <div className="flex flex-col xl:flex xl:flex-row items-start gap-8">
                                 <div className="flex items-center py-3 gap-4 md:gap-8 w-full max-w-xl">
-                                    <span className="bg-primary dark:text-secondary py-1.5 px-2.5 text-base font-medium rounded-full">07</span>
+                                    <span className="bg-primary dark:text-secondary-text py-1.5 px-2.5 text-base font-medium rounded-full">07</span>
                                     <div className="h-px w-16 bg-black/12 dark:bg-white/12" />
                                     <p className="section-bedge py-1.5 px-4 rounded-full">Service Packages</p>
                                 </div>
                                 <div className="flex flex-col gap-11">
                                     <div className="flex flex-col gap-5 ">
                                         <h2 className="max-w-3xl">Service Packages</h2>
-                                        <p className="max-w-2xl text-secondary/70 dark:text-white/70">Professional car detailing packages designed to meet your needs. From basic maintenance to premium protection, we have the perfect solution for your vehicle.</p>
+                                        <p className="max-w-2xl text-secondary-text/70 dark:text-white/70">Professional car detailing packages designed to meet your needs. From basic maintenance to premium protection, we have the perfect solution for your vehicle.</p>
                                     </div>
                                 </div>
                             </div>
@@ -64,13 +64,13 @@ const [pricingData, setPricingData] = useState<any>(null);
                                                 <div>
                                                     <div className="flex items-center gap-3">
                                                         {value.cancelPrice &&
-                                                            <h3 className="text-secondary/40 dark:text-white/40"><del>{value.cancelPrice}</del></h3>
+                                                            <h3 className="text-secondary-text/40 dark:text-white/40"><del>{value.cancelPrice}</del></h3>
                                                         }
                                                         <h3>{value.planPrice}</h3>
-                                                        <span className="text-base text-secondary/70 dark:text-white/70">/service</span>
+                                                        <span className="text-base text-secondary-text/70 dark:text-white/70">/service</span>
                                                     </div>
                                                 </div>
-                                                <p className="text-base text-secondary/70 dark:text-white/70">{value.planDescp}</p>
+                                                <p className="text-base text-secondary-text/70 dark:text-white/70">{value.planDescp}</p>
                                             </div>
                                             <div className="pt-10 border-t border-secondary/12 dark:border-white/12">
                                                 <p className="text-base pb-5">What’s Included:</p>
@@ -91,7 +91,7 @@ const [pricingData, setPricingData] = useState<any>(null);
                                             </div>
                                             <div>
                                                 <Link href="/booking" className="group relative flex justify-center items-center w-full bg-primary hover:bg-secondary rounded-full transition-all duration-300 ease-in-out">
-                                                    <span className="py-4 px-2 text-lg font-bold text-secondary group-hover:text-white transition-all duration-300 ease-in-out">Book Now</span>
+                                                    <span className="py-4 px-2 text-lg font-bold text-secondary-text group-hover:text-white transition-all duration-300 ease-in-out">Book Now</span>
                                                     <div className="absolute top-0.5 right-0.5 transition-all duration-300 ease-in-out group-hover:left-0">
                                                         <svg className="flex items-center transition-transform duration-300 ease-in-out group-hover:rotate-45" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <g filter="url(#filter0_d_1_873)">
@@ -120,7 +120,7 @@ const [pricingData, setPricingData] = useState<any>(null);
                             </div>
                         </div>
                         <div className="flex flex-col gap-10">
-                            <p className="text-secondary dark:text-white text-center">Over 10,000 satisfied customers in Dubai</p>
+                            <p className="text-secondary-text dark:text-white text-center">Over 10,000 satisfied customers in Dubai</p>
                             <Slider duration={20} pauseOnHover={true} blurBorders={false}>
                                 {(pricingData?.partnerLogo || []).map((items: any, index: any) => (
                                     <Logoslider key={index} logo={items} />
