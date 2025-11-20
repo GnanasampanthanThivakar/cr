@@ -23,7 +23,7 @@ const statsFactData = {
     number: '01',
     name: "Why Choose Us",
     heading: "Masterpieces Aren't Washed. They Are Curated",
-    description: "Dubai’s premier aesthetic restoration center. Specializing in Nano-Ceramic protection, bespoke detailing, and interior renewal for the world’s finest vehicles.",
+    description: "Dubai's premier aesthetic restoration center. Specializing in Nano-Ceramic protection, bespoke detailing, and interior renewal for the world's finest vehicles.",
     scoreData: [
         {
             number: 10,
@@ -163,6 +163,34 @@ const teamData = {
     ]
 };
 
+const arsenalData = {
+    number: '06',
+    heading: "Engineered for Perfection",
+    description: "State-of-the-art equipment and technology delivering precision results that separate detailing from car washing.",
+    equipment: [
+        {
+            image: "/images/home/arsenal/equipment-1.png",
+            name: "Rupes BigFoot Systems",
+            description: "Hologram-free Italian polishing technology for mirror-perfect finishes."
+        },
+        {
+            image: "/images/home/arsenal/equipment-2.png",
+            name: "Digital Diagnostics",
+            description: "Precision paint depth measurement ensuring safe correction."
+        },
+        {
+            image: "/images/home/arsenal/equipment-3.png",
+            name: "Infrared Curing",
+            description: "Baking the ceramic shell for maximum hardness and longevity."
+        },
+        {
+            image: "/images/home/arsenal/equipment-4.png",
+            name: "Gtechniq Protection",
+            description: "Elite-tier ceramic coating technology with unmatched durability."
+        }
+    ]
+};
+
 const pricingData = {
     data: [
         {
@@ -210,7 +238,7 @@ const faqData = {
             faq_ans: 'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.'
         },
         {
-            faq_que: "What’s the cost of a project?",
+            faq_que: "What's the cost of a project?",
             faq_ans: 'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.'
         },
         {
@@ -219,6 +247,7 @@ const faqData = {
         }
     ]
 };
+
 const contactData = {
     keypoint:["Premium Car Detailing Services","XPEL Certified Experts"],
     managerProfile:{
@@ -247,13 +276,11 @@ const aboutusStats = [
         title: 'XPEL Certified Team',
         descp: "Our entire team is fully certified in XPEL products and installation techniques."
     },
-]
+];
 
 const servicesSliderData = [
     "Branding", "Web development", "Agency","Content creation","SaaS","Motion & 3d modeling","Photography"
-]
-
-
+];
 
 export const dynamic = "error";
 
@@ -264,6 +291,7 @@ export const GET = async () => {
         servicesData,
         testimonialData,
         teamData,
+        arsenalData,
         pricingData,
         faqData,
         contactData,

@@ -107,7 +107,7 @@ const BRANDS = [
 
 export default function LuxuryCarSlider() {
   return (
-    <div className="w-full py-10 overflow-hidden">
+    <div className="w-full py-10 overflow-hidden bg-lightgray dark:bg-secondary">
       <Slider width="200px" duration={40} pauseOnHover blurBorders={false}>
         {BRANDS.map((b, i) => (
           <Slider.Slide key={i}>

@@ -9,8 +9,9 @@ import BeforeAfterSection from "./components/home/before-after/BeforeAfterSectio
 import Resources from "./components/home/resources";
 import Services from "./components/home/services";
 import StatsFacts from "./components/home/stats-facts";
-import Team from "./components/home/team";
+import Arsenal from "./components/home/arsenal";
 import Testimonial from "./components/home/testimonial";
+import Logoslider from "./components/home/pricing/Logoslider";
 
 export const metadata: Metadata = {
     title: "Crystal Shine Auto Center | Premium Car Detailing in Dubai",
@@ -22,11 +23,12 @@ export default function Home() {
     <>
       <HeroSection />
       <StatsFacts/>
+      <Logoslider />
       <Portfolio/>
       <Services/>
       <Aboutus/>
       <Testimonial/>
-      <Team teamdataNumber="06"/>
+      <Arsenal arsenalNumber="06"/>
       <VideoHero/>
       <BeforeAfterSection/>
       <Faq/>
