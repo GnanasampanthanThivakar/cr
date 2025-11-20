@@ -5,17 +5,28 @@ const Logo = (props: { sticky: boolean }) => {
     const { sticky } = props;
     return (
         <Link href="/">
+            {/* Light Mode Logo */}
             <Image
-                src="https://cdn.crystal-shine.com/uploads/2019/06/cs-new-logo-black.svg"
+                src="/images/logo/logo-black.svg"
                 alt="Crystal Shine Auto Center Logo"
                 width={190}
                 height={34}
-                style={{ width: 'auto', height: 'auto' }}
+                style={{ width: '100%', maxWidth: '190px', height: 'auto' }}
                 quality={100}
                 priority={true}
-                className='hidden xsm:block'
+                className='dark:hidden'
             />
-            <Image src="https://cdn.crystal-shine.com/uploads/2019/06/cs-new-logo-black.svg" alt='Crystal Shine Auto Center Logo' width={40} height={40} className='block xsm:hidden' />
+            {/* Dark Mode Logo */}
+            <Image
+                src="/images/logo/logo-white.svg"
+                alt="Crystal Shine Auto Center Logo"
+                width={190}
+                height={34}
+                style={{ width: '100%', maxWidth: '190px', height: 'auto' }}
+                quality={100}
+                priority={true}
+                className='hidden dark:block'
+            />
         </Link>
     );
 };
