@@ -113,7 +113,7 @@ const Projectswiper = () => {
                                     {value.ScopeOfWork.map((tag, idx) => (
                                         <p
                                             key={idx}
-                                            className="text-base dark:text-white dark:hover:text-secondary-text hover:bg-primary border border-secondary/12 dark:border-white/12 w-fit rounded-full py-1 px-3"
+                                            className="text-base dark:text-white dark:hover:text-secondary hover:bg-primary border border-secondary/12 dark:border-white/12 w-fit rounded-full py-1 px-3"
                                         >
                                             {tag}
                                         </p>

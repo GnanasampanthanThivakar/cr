@@ -25,7 +25,7 @@ function Aboutus() {
         <div className="flex flex-col 2xl:flex-row gap-10 2xl:gap-28">
           <div className="flex flex-col gap-5 2xl:gap-7 w-full 2xl:max-w-2xl 2xl:w-full">
             <div className="flex items-center gap-4 md:gap-8">
-              <span className="bg-primary py-1.5 px-2.5 text-base font-medium rounded-full dark:text-white">
+              <span className="bg-primary py-1.5 px-2.5 text-base font-medium rounded-full text-white">
                 04
               </span>
               <div className="h-px w-16 bg-secondary/12 dark:bg-white/12" />
@@ -34,10 +34,10 @@ function Aboutus() {
               </p>
             </div>
             <div className="flex flex-col gap-5 2xl:gap-7">
-              <h2 className="2xl:max-w-3xl text-secondary-text dark:text-white">
+              <h2 className="2xl:max-w-3xl text-secondary dark:text-white">
                 Why Choose Crystal Shine
               </h2>
-              <p className="2xl:max-w-sm text-secondary-text/70 dark:text-white/70">
+              <p className="2xl:max-w-sm text-secondary/70 dark:text-white/70">
                 Dubai's premier car detailing center since 2009, combining
                 XPEL-certified expertise with premium products for
                 showroom-perfect results.

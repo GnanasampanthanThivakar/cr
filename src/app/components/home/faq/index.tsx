@@ -29,14 +29,14 @@ function Faq() {
                         <div className="flex flex-col gap-14 xl:gap-24">
                             <div className="flex flex-col xl:flex xl:flex-row items-start gap-8">
                                 <div className="flex items-center py-3 gap-4 md:gap-8 w-full max-w-xl">
-                                    <span className="bg-primary dark:text-secondary-text py-1.5 px-2.5 text-base font-medium rounded-full">08</span>
+                                    <span className="bg-primary text-white py-1.5 px-2.5 text-base font-medium rounded-full">08</span>
                                     <div className="h-px w-16 bg-black/12 dark:bg-white/12"/>
                                     <p className="section-bedge py-1.5 px-4 rounded-full">FAQs</p>
                                 </div>
                                 <div className="flex flex-col gap-11">
                                     <div className="flex flex-col gap-5 ">
                                         <h2 className="max-w-3xl">Car Detailing FAQs</h2>
-                                        <p className="max-w-2xl text-secondary-text/70 dark:text-white/70">Common questions about our premium car detailing services, XPEL certifications, and booking process in Dubai.</p>
+                                        <p className="max-w-2xl text-secondary/70 dark:text-white/70">Common questions about our premium car detailing services, XPEL certifications, and booking process in Dubai.</p>
                                     </div>
                                 </div>
                             </div>

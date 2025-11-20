@@ -9,14 +9,14 @@ function Portfolio() {
                     <div className="flex flex-col gap-24">
                         <div className="flex flex-col xl:flex xl:flex-row items-start gap-8">
                             <div className="flex items-center py-3 gap-4 md:gap-8 w-full max-w-xl">
-                                <span className="bg-primary py-1.5 px-2.5 text-base font-medium rounded-full dark:text-secondary-text">02</span>
+                                <span className="bg-primary py-1.5 px-2.5 text-base font-medium rounded-full text-white">02</span>
                                 <div className="h-px w-16 bg-black/12 dark:bg-white/12" />
                                 <p className="section-bedge py-1.5 px-4 rounded-full">Our Work</p>
                             </div>
                             <div className="flex flex-col gap-11">
                                 <div className="flex flex-col gap-5 ">
                                     <h2 className="max-w-3xl">Featured Transformations</h2>
-                                    <p className="max-w-2xl text-secondary-text/70 dark:text-white/70">Showcase of our premium car detailing work—before and after transformations that demonstrate our commitment to excellence.</p>
+                                    <p className="max-w-2xl text-secondary/70 dark:text-white/70">Showcase of our premium car detailing work—before and after transformations that demonstrate our commitment to excellence.</p>
                                 </div>
                             </div>
                         </div>

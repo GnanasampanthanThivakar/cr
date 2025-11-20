@@ -75,7 +75,7 @@ const Contact = (props: { contactdataNumber: string }) => {
                     <div className="flex flex-col gap-14 xl:gap-24">
                         <div className="flex flex-col xl:flex xl:flex-row items-start gap-8">
                             <div className="flex items-center py-3 gap-4 md:gap-8 w-full max-w-xl">
-                                <span className="bg-primary dark:text-secondary-text py-1.5 px-2.5 text-base font-medium rounded-full">{contactdataNumber ? contactdataNumber : 10}</span>
+                                <span className="bg-primary text-white py-1.5 px-2.5 text-base font-medium rounded-full">{contactdataNumber ? contactdataNumber : 10}</span>
                                 <div className="h-px w-16 bg-black/12 dark:bg-white/12" />
                                 <p className="section-bedge py-1.5 px-4 rounded-full">Contact us</p>
                             </div>
@@ -89,7 +89,7 @@ const Contact = (props: { contactdataNumber: string }) => {
                     <div className="flex flex-col xl:flex xl:flex-row gap-15 xl:gap-48">
                         <div className="max-w-md flex flex-col gap-9 md:gap-16">
                             <div className="flex flex-col gap-5 md:gap-8">
-                                <p className="max-w-2xl text-secondary-text/70 dark:text-white/70">Ready to make your car shine? Contact us today for premium detailing services. Our experts are here to help you choose the perfect treatment for your vehicle.</p>
+                                <p className="max-w-2xl text-secondary/70 dark:text-white/70">Ready to make your car shine? Contact us today for premium detailing services. Our experts are here to help you choose the perfect treatment for your vehicle.</p>
                                 <div>
                                     <ul className="flex flex-col gap-3">
                                         {contactData?.keypoint?.map((value:any, index:any) => {
@@ -110,7 +110,7 @@ const Contact = (props: { contactdataNumber: string }) => {
                                 <Image src={contactData?.managerProfile?.image} alt="image" width={64} height={64} className="rounded-full" />}
                                 <div>
                                     <p>{contactData?.managerProfile?.name}</p>
-                                    <span className="text-base text-secondary-text/70 dark:text-white/70">{contactData?.managerProfile?.position}</span>
+                                    <span className="text-base text-secondary/70 dark:text-white/70">{contactData?.managerProfile?.position}</span>
                                 </div>
                             </div>
                         </div>
@@ -174,13 +174,13 @@ const Contact = (props: { contactdataNumber: string }) => {
                                         <div className="bg-primary w-fit p-1 sm:p-1.5 rounded-full flex-shrink-0">
                                             <Image src={"/images/Icon/right-check.svg"} alt="right-icon" width={20} height={20} />
                                         </div>
-                                        <p className="text-secondary-text">Great!!! Email has been Successfully Sent. We will get in touch asap.</p>
+                                        <p className="text-secondary">Great!!! Email has been Successfully Sent. We will get in touch asap.</p>
                                     </div>
                                 )}
                                 <div>
                                     {!loader ? (
                                         <button type="submit" className="group relative flex justify-center items-center w-full bg-primary hover:bg-secondary rounded-full transition-all duration-300 ease-in-out cursor-pointer">
-                                            <span className="py-4 px-2 text-lg font-bold text-secondary-text group-hover:text-white transition-all duration-300 ease-in-out">Send Message</span>
+                                            <span className="py-4 px-2 text-lg font-bold text-white group-hover:text-white transition-all duration-300 ease-in-out">Send Message</span>
                                             <div className="absolute top-0.5 right-0.5 transition-all duration-300 ease-in-out group-hover:left-0">
                                                 <svg className="flex items-center transition-transform duration-300 ease-in-out group-hover:rotate-45" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g filter="url(#filter0_d_1_873)">
@@ -224,10 +224,10 @@ const Contact = (props: { contactdataNumber: string }) => {
 
                 {/* Phone CTA Block */}
                 <div className="mt-16 text-center">
-                    <p className="text-secondary-text/70 dark:text-white/70 mb-4">Need quick assistance?</p>
+                    <p className="text-secondary/70 dark:text-white/70 mb-4">Need quick assistance?</p>
                     <a
                         href="tel:+971XXXXXXXXX"
-                        className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-secondary-text font-bold py-3 px-6 rounded-full transition-colors"
+                        className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-full transition-colors"
                     >
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>

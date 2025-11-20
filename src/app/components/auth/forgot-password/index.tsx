@@ -65,10 +65,10 @@ const ForgotPassword = () => {
                 {isEmailSent ? (
                   <div className="flex flex-col items-center gap-5">
                     <div className="flex flex-col gap-2">
-                      <h4 className="text-secondary-text dark:text-white font-bold">
+                      <h4 className="text-secondary dark:text-white font-bold">
                         Forgot Your Password?
                       </h4>
-                      <p className="text-secondary-text/60 dark:text-white/60">
+                      <p className="text-secondary/60 dark:text-white/60">
                         Please check your inbox for the new password.
                       </p>
                     </div>
@@ -98,7 +98,7 @@ const ForgotPassword = () => {
                     <div>
                       <button
                         type="submit"
-                        className="flex w-full px-5 py-3 font-medium cursor-pointer items-center justify-center transition duration-300 ease-in-out rounded-full border border-secondary dark:border-white/90 bg-secondary dark:bg-white/90 hover:bg-transparent text-white dark:text-white hover:text-secondary-text dark:hover:text-white"
+                        className="flex w-full px-5 py-3 font-medium cursor-pointer items-center justify-center transition duration-300 ease-in-out rounded-full border border-secondary dark:border-white/90 bg-secondary dark:bg-white/90 hover:bg-transparent text-white dark:text-white hover:text-secondary dark:hover:text-white"
                         disabled={loader}
                       >
                         {loader ? <Loader /> : "Send Email"}

@@ -37,7 +37,7 @@ const AboutusStats = () => {
                                     {value.postfix && <span>{value.postfix}</span>}</h3>
                                 <div className="flex flex-col gap-2 md:gap-4">
                                     <h4>{value.title}</h4>
-                                    <p className="text-base text-secondary-text/70 dark:text-white/70">{value.descp}</p>
+                                    <p className="text-base text-secondary/70 dark:text-white/70">{value.descp}</p>
                                 </div>
                             </div>
                         )

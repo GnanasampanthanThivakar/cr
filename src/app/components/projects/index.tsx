@@ -69,11 +69,11 @@ const ProjectList = () => {
                                     </div>
                                     <div className="flex flex-col gap-3">
                                         <h3>{item.title}</h3>
-                                        <p className="text-secondary-text/70 dark:text-white/70 text-sm">{item.description}</p>
+                                        <p className="text-secondary/70 dark:text-white/70 text-sm">{item.description}</p>
                                         <div className="flex gap-3">
                                             {item.services.map((service, serviceIndex) => {
                                                 return (
-                                                    <p key={serviceIndex} className="text-base hover:bg-primary border border-secondary/12 dark:border-white/12 dark:hover:text-secondary-text w-fit py-1 px-4 rounded-full">{service}</p>
+                                                    <p key={serviceIndex} className="text-base hover:bg-primary border border-secondary/12 dark:border-white/12 dark:hover:text-secondary w-fit py-1 px-4 rounded-full">{service}</p>
                                                 )
                                             })}
                                         </div>

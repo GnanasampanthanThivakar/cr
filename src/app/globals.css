@@ -14,7 +14,6 @@
   /* color */
   --color-primary: #E50914;
   --color-secondary: #1F2A2E;
-  --color-secondary-text: #ffffff;
   --color-lightgray: #F4F8FA;
   --color-overlay: #000A0B99;
   --color-darkblack: #273338;
@@ -63,7 +62,7 @@ body {
   }
 
   .project-descp p {
-    @apply text-secondary-text/70 dark:text-white/70 pt-2;
+    @apply text-secondary/70 dark:text-white/70 pt-2;
   }
 
   .project-descp h4 {
@@ -75,7 +74,7 @@ body {
   }
 
   .blog-content p {
-    @apply text-secondary-text/70 dark:text-white/70;
+    @apply text-secondary/70 dark:text-white/70;
   }
 
   .blog-content h4 {
@@ -105,15 +104,15 @@ body {
   }
 
   h2 {
-    @apply text-4xl md:text-5xl Xxl:text-[56px] font-bold leading-tight text-secondary-text dark:text-white;
+    @apply text-4xl md:text-5xl Xxl:text-[56px] font-bold leading-tight text-secondary dark:text-white;
   }
 
   h3 {
-    @apply text-28 Xxl:text-4xl font-bold text-secondary-text dark:text-white;
+    @apply text-28 Xxl:text-4xl font-bold text-secondary dark:text-white;
   }
 
   h4 {
-    @apply text-xl md:text-2xl lg:text-28 font-bold text-secondary-text dark:text-white;
+    @apply text-xl md:text-2xl lg:text-28 font-bold text-secondary dark:text-white;
   }
 
   h5 {

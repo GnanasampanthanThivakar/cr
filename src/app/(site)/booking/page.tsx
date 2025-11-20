@@ -59,7 +59,7 @@ export default function Page() {
                             {[1, 2, 3, 4].map((step) => (
                                 <div key={step} className="flex items-center">
                                     <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                                        step <= currentStep ? 'bg-primary text-secondary-text' : 'bg-gray-300 text-gray-600'
+                                        step <= currentStep ? 'bg-primary text-secondary' : 'bg-gray-300 text-gray-600'
                                     }`}>
                                         {step}
                                     </div>
@@ -255,14 +255,14 @@ export default function Page() {
                                     <button
                                         type="button"
                                         onClick={nextStep}
-                                        className="px-6 py-3 bg-primary text-secondary-text rounded-lg hover:bg-primary/90 transition-colors ml-auto"
+                                        className="px-6 py-3 bg-primary text-secondary rounded-lg hover:bg-primary/90 transition-colors ml-auto"
                                     >
                                         Next
                                     </button>
                                 ) : (
                                     <button
                                         type="submit"
-                                        className="px-6 py-3 bg-primary text-secondary-text rounded-lg hover:bg-primary/90 transition-colors ml-auto"
+                                        className="px-6 py-3 bg-primary text-secondary rounded-lg hover:bg-primary/90 transition-colors ml-auto"
                                     >
                                         Confirm Booking
                                     </button>

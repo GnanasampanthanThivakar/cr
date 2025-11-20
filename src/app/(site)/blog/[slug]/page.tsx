@@ -138,7 +138,7 @@ export default async function Post({ params }: Props) {
                                 <div className="flex items-center gap-4 md:gap-8 w-full max-w-xl">
                                     <h2 className="text-4xl lg:text-5xl xl:text-56">Scroll to read</h2>
                                 </div>
-                                <p className="text-secondary-text/70 dark:text-white/70">{blog?.scrolltoread}</p>
+                                <p className="text-secondary/70 dark:text-white/70">{blog?.scrolltoread}</p>
                             </div>
                             <div className="w-full h-700px">
                                 <Image src={blog?.galleryImg} alt="Image" width={1600} height={750} className="w-full h-full object-cover" />

@@ -42,7 +42,7 @@ function HeroSection() {
                             <div className="flex flex-col lg:flex-row items-start lg:items-end gap-4">
                                 <h1 className="large-heading">Crystal Shine Auto Center</h1>
                                 <div className="flex gap-4">
-                                    <button className="bg-primary hover:bg-primary/90 text-secondary-text font-bold py-3 px-6 rounded-full transition-colors">
+                                    <button className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-full transition-colors">
                                         Book Now
                                     </button>
                                     <button className="border border-white text-white hover:bg-white hover:text-black font-bold py-3 px-6 rounded-full transition-colors">

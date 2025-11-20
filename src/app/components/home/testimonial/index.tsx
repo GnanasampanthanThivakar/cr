@@ -26,7 +26,7 @@ function Testimonial() {
           <div className="flex flex-col gap-14 xl:gap-24">
             <div className="flex flex-col xl:flex xl:flex-row items-start gap-8">
               <div className="flex items-center py-3 gap-4 md:gap-8 w-full max-w-xl">
-                <span className="bg-primary dark:text-white py-1.5 px-2.5 text-base font-medium rounded-full">
+                <span className="bg-primary text-white py-1.5 px-2.5 text-base font-medium rounded-full">
                   05
                 </span>
                 <div className="h-px w-16 bg-black/12 dark:bg-white/12" />
@@ -37,7 +37,7 @@ function Testimonial() {
               <div className="flex flex-col gap-11">
                 <div className="flex flex-col gap-5 ">
                   <h2 className="max-w-3xl">What Our Clients Say</h2>
-                  <p className="max-w-2xl text-secondary-text/70 dark:text-white/70">
+                  <p className="max-w-2xl text-secondary/70 dark:text-white/70">
                     Real experiences from Dubai's car owners who trust Crystal
                     Shine with their prized vehicles.
                   </p>
@@ -47,7 +47,7 @@ function Testimonial() {
             <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-7">
               <div className="bg-primary p-4 lg:p-7 flex flex-col gap-32">
                 <div className="flex flex-col gap-6">
-                  <p className="text-base text-secondary-text/70">
+                  <p className="text-base text-secondary/70">
                     {testimonialData?.data_1?.preTitle}
                   </p>
                   <h4 className="dark:text-white">
@@ -66,7 +66,7 @@ function Testimonial() {
                     <p className="dark:text-white">
                       {testimonialData?.data_1?.author}
                     </p>
-                    <p className="text-secondary-text/70 text-base font-normal">
+                    <p className="text-secondary/70 text-base font-normal">
                       {testimonialData?.data_1?.company}
                     </p>
                   </div>
@@ -115,7 +115,7 @@ function Testimonial() {
               </div>
               <div className="bg-white dark:bg-black/20 p-4 lg:p-7 flex flex-col justify-between gap-32">
                 <div className="flex flex-col gap-6">
-                  <p className="text-base text-secondary-text/70 dark:text-white/70">
+                  <p className="text-base text-secondary/70 dark:text-white/70">
                     {testimonialData?.data_3?.preTitle}
                   </p>
                   <h4>{testimonialData?.data_3?.title}</h4>
@@ -130,7 +130,7 @@ function Testimonial() {
                   />
                   <div>
                     <p>{testimonialData?.data_3?.author}</p>
-                    <p className="text-secondary-text/70 dark:text-white/70 text-base font-normal">
+                    <p className="text-secondary/70 dark:text-white/70 text-base font-normal">
                       {testimonialData?.data_3?.company}
                     </p>
                   </div>

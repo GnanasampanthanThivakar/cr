@@ -115,7 +115,7 @@ const Header = () => {
                                     ${isClosing ? "opacity-0 scale-95" : "opacity-100 scale-100"}`}
                                 >
                                     <div className="flex items-center justify-between pb-5 border-b border-secondary/15 dark:border-white/15">
-                                        <p className="text-secondary-text dark:text-white">Menu</p>
+                                        <p className="text-secondary dark:text-white">Menu</p>
                                         <div onClick={() => setMenuOpen(false)} className="p-2 cursor-pointer">
                                             <Image src="/images/Icon/close-icon.svg" alt="icon" width={16} height={16} className="dark:hidden" />
                                             <Image src="/images/Icon/close-icon-dark.svg" alt="icon" width={16} height={16} className="hidden dark:block" />
@@ -130,7 +130,7 @@ const Header = () => {
 
                                         {user?.user ? (
                                             <div className="flex flex-col gap-2">
-                                                <button onClick={() => handleSignOut()} className="flex justify-center items-center cursor-pointer gap-2 text-secondary-text hover:text-white dark:border dark:border-primary dark:hover:text-white bg-primary dark:hover:bg-transparent dark:hover:border dark:hover:border-white hover:bg-secondary text-xl font-bold rounded-full py-2.5 px-4.5 transition-all duration-300 ease-in-out">
+                                                <button onClick={() => handleSignOut()} className="flex justify-center items-center cursor-pointer gap-2 text-white hover:text-white dark:text-white dark:border dark:border-primary dark:hover:text-white bg-primary dark:hover:bg-transparent dark:hover:border dark:hover:border-white hover:bg-secondary text-xl font-bold rounded-full py-2.5 px-4.5 transition-all duration-300 ease-in-out">
                                                     Sign Out
                                                     <Icon icon="solar:logout-outline" width="25" height="25" />
                                                 </button>
@@ -138,7 +138,7 @@ const Header = () => {
                                         ) : null}
                                     </div>
                                     <div>
-                                        <Link href="tel:+971501234567" className="text-secondary-text/60 dark:text-white/60 hover:text-secondary-text dark:hover:text-white">+971 50 123 4567</Link>
+                                        <Link href="tel:+971501234567" className="text-secondary/60 dark:text-white/60 hover:text-secondary dark:hover:text-white">+971 50 123 4567</Link>
                                         <Link href="mailto:info@crystalshine.ae"><h4>info@crystalshine.ae</h4></Link>
                                     </div>
                                 </div>

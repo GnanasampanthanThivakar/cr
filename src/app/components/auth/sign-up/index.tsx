@@ -94,7 +94,7 @@ const SignUp = () => {
 
                                 <span className="z-1 relative my-8 block text-center">
                                     <span className="-z-1 absolute left-0 top-1/2 block h-px w-full bg-secondary/12 dark:bg-white/12"></span>
-                                    <span className="text-sm text-secondary-text/50 dark:text-white/50 relative z-10 inline-block bg-white dark:bg-darkblack px-3">
+                                    <span className="text-sm text-secondary/50 dark:text-white/50 relative z-10 inline-block bg-white dark:bg-darkblack px-3">
                                         OR
                                     </span>
                                 </span>
@@ -142,7 +142,7 @@ const SignUp = () => {
                                     <div className="my-9">
                                         <button
                                             type="submit"
-                                            className="flex w-full px-5 py-3 font-medium cursor-pointer items-center justify-center transition duration-300 ease-in-out rounded-full border border-secondary dark:border-white/90 bg-secondary dark:bg-white/90 hover:bg-transparent text-white dark:text-secondary-text hover:text-secondary-text dark:hover:text-white"
+                                            className="flex w-full px-5 py-3 font-medium cursor-pointer items-center justify-center transition duration-300 ease-in-out rounded-full border border-secondary dark:border-white/90 bg-secondary dark:bg-white/90 hover:bg-transparent text-white dark:text-secondary hover:text-secondary dark:hover:text-white"
                                             disabled={loading}
                                         >
                                             Sign Up {loading && <Loader />}
@@ -151,20 +151,20 @@ const SignUp = () => {
                                 </form>
 
                                 <div className="flex flex-col max-w-xs mx-auto gap-2">
-                                    <p className="text-base font-medium text-secondary-text/70 dark:text-white/70">
+                                    <p className="text-base font-medium text-secondary/70 dark:text-white/70">
                                         By creating an account, you agree with our{" "}
-                                        <Link href="/privacy-policy" className="text-secondary-text/70 dark:text-white/70 hover:text-secondary-text dark:hover:text-primary">
+                                        <Link href="/privacy-policy" className="text-secondary/70 dark:text-white/70 hover:text-secondary dark:hover:text-primary">
                                             Privacy
                                         </Link>{" "}
                                         and{" "}
-                                        <Link href="/privacy-policy" className="text-secondary-text/70 dark:text-white/70 hover:text-secondary-text dark:hover:text-primary">
+                                        <Link href="/privacy-policy" className="text-secondary/70 dark:text-white/70 hover:text-secondary dark:hover:text-primary">
                                             Policy
                                         </Link>.
                                     </p>
 
-                                    <p className="text-base font-medium text-secondary-text/70 dark:text-white/70">
+                                    <p className="text-base font-medium text-secondary/70 dark:text-white/70">
                                         Already have an account?
-                                        <Link href="/signin" className="text-secondary-text/70 dark:text-white/70 hover:text-secondary-text dark:hover:text-primary">
+                                        <Link href="/signin" className="text-secondary/70 dark:text-white/70 hover:text-secondary dark:hover:text-primary">
                                             {" "}Sign In
                                         </Link>
                                     </p>
