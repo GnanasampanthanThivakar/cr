@@ -21,10 +21,9 @@ export default function BeforeAfterSection() {
 
             <div className="flex flex-col gap-11">
               <div className="flex flex-col gap-5">
-                <h2 className="max-w-3xl">Before/After Before & After</h2>
+                <h2 className="max-w-3xl"> Before & After</h2>
                 <p className="max-w-2xl text-secondary/70 dark:text-white/70">
-                  Dive deep into our meticulous detailing process and witness the remarkable transformation of vehicles. Our
-                  expert team delivers stunning results that speak for themselves.
+                 See how we erase parking lot scars and industrial fallout. We return your vehicle to the condition it deserved to be in when it left the factory.
                 </p>
               </div>
             </div>
