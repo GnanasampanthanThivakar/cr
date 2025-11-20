@@ -38,9 +38,7 @@ function Aboutus() {
                 Why Choose Crystal Shine
               </h2>
               <p className="2xl:max-w-sm text-secondary/70 dark:text-white/70">
-                Dubai's premier car detailing center since 2009, combining
-                XPEL-certified expertise with premium products for
-                showroom-perfect results.
+                Since 2009, Crystal Shine has been the guardian of Dubai’s most prestigious vehicles. We combine over a decade of mastery with elite-tier Gtechniq protection to deliver a finish that doesn't just shine it mirrors.
               </p>
             </div>
           </div>

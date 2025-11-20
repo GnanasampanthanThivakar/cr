@@ -55,7 +55,6 @@ function StatsFacts() {
                                             <h3 className="text-5xl md:text-6xl Xxl:text-7xl font-bold">
                                                 {inView ? <CountUp start={0} end={value.number} duration={3} /> : "0"}
                                                 {value.numberValue && <span>{value.numberValue}</span>}
-                                                <span>+</span>
                                             </h3>
                                             <p className="text-base text-secondary/70 dark:text-white/70">{value.scoreDescp}</p>
                                         </div>

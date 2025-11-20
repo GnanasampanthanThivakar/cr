@@ -22,11 +22,11 @@ const avatarList = [
 const statsFactData = {
     number: '01',
     name: "Why Choose Us",
-    heading: "Dubai's Trusted Car Detailing Experts Since 2009",
-    description: "With over 15 years of experience and 10,000+ satisfied customers, we deliver premium car detailing services using XPEL-certified products and techniques.",
+    heading: "Masterpieces Aren't Washed. They Are Curated",
+    description: "Dubai’s premier aesthetic restoration center. Specializing in Nano-Ceramic protection, bespoke detailing, and interior renewal for the world’s finest vehicles.",
     scoreData: [
         {
-            number: 15,
+            number: 10,
             numberValue: '+',
             scoreDescp: "Years of Experience"
         },
