@@ -4,7 +4,8 @@ import Contact from "./components/home/contact";
 import Faq from "./components/home/faq";
 import HeroSection from "./components/home/hero";
 import Portfolio from "./components/home/portfolio";
-import Pricing from "./components/home/pricing";
+import VideoHero from "./components/home/video-hero";
+import BeforeAfterSection from "./components/home/before-after/BeforeAfterSection";
 import Resources from "./components/home/resources";
 import Services from "./components/home/services";
 import StatsFacts from "./components/home/stats-facts";
@@ -26,7 +27,8 @@ export default function Home() {
       <Aboutus/>
       <Testimonial/>
       <Team teamdataNumber="06"/>
-      <Pricing/>
+      <VideoHero/>
+      <BeforeAfterSection/>
       <Faq/>
       <Resources/>
       <Contact contactdataNumber="10"/>

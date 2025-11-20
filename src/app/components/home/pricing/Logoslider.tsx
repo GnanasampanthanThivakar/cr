@@ -97,7 +97,7 @@ const BRANDS = [
   { name: "Fiat", Icon: SiFiat },
   { name: "Opel", Icon: SiOpel },
   { name: "Citroën", Icon: SiCitroen },
-  { name: "Tata", Icon: SiTata },
+  
   { name: "Subaru", Icon: SiSubaru },
   { name: "Mazda", Icon: SiMazda },
   { name: "Ford", Icon: SiFord },
