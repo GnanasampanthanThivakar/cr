@@ -30,7 +30,7 @@ function Services() {
         return () => window.removeEventListener("resize", checkScreenSize);
     }, []);
 
-    const handleMouseEnter = (index: number, event: React.MouseEvent<HTMLDivElement>) => {
+    const handleMouseEnter = (index: number, event: React.MouseEvent<HTMLElement>) => {
         setActiveIndex(index);
 
         // Get hovered service div position
@@ -94,24 +94,21 @@ function Services() {
                                     {servicesData?.data
                                         ?.slice(0, showAll ? servicesData.data.length : 6)
                                         .map((value: any, index: any) => (
-                                            <div
+                                            <Link
                                                 key={value.id ?? index}
+                                                href={value.url ?? "/services"}
                                                 onMouseEnter={(e) => handleMouseEnter(index, e)}
-                                                className="group py-6 xl:py-10 border-t border-white/12 cursor-pointer flex xl:flex-row flex-col xl:items-center items-start justify-between xl:gap-10 gap-1 relative">
+                                                className="group py-6 xl:py-10 border-t border-white/12 cursor-pointer flex xl:flex-row flex-col xl:items-center items-start justify-between xl:gap-10 gap-1 relative"
+                                            >
                                                 <h3 className="text-white group-hover:text-primary 2xl:w-full 2xl:max-w-sm py-1">
-                                                    <Link
-                                                        href={value.url ?? "/services"}
-                                                        className="block text-inherit"
-                                                    >
-                                                        {value.heading}
-                                                    </Link>
+                                                    {value.heading}
                                                 </h3>
                                                 {activeIndex === index && (
                                                     <p className="text-white/70 text-base transition-all duration-300 flex-1">
                                                         {value.descp}
                                                     </p>
                                                 )}
-                                            </div>
+                                            </Link>
                                         ))}
                                 </div>
                                 <div className="flex flex-wrap items-center gap-4">

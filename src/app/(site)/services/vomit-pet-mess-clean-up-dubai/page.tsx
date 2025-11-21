@@ -1,4 +1,5 @@
 import Herobanner from "@/app/components/shared/hero-banner";
+import NavigationLink from "@/app/components/shared/navigation-link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,57 +12,101 @@ export default function Page() {
   return (
     <main>
       <Herobanner
-        bannerimage="/images/about-us/banner/aboutus-banner.png"
+        bannerimage="/images/services/polishing/hero.png" // Placeholder
         heading="Vomit / Pet Mess Clean Up Dubai"
         desc="Specialized <span>bio-cleaning and sanitization</span> for vomit and pet mess in your vehicle."
       />
 
-      <section className="py-20 md:py-40">
+      <section className="py-20 md:py-40 bg-[#273338]">
         <div className="container">
           <div className="flex flex-col gap-11">
-            <div className="flex flex-col gap-5 max-w-3xl">
-              <h2>Vomit & Pet Mess Clean Up in Dubai</h2>
-              <p className="text-secondary/70 dark:text-white/70">
-                Accidents from children, passengers, or pets can leave serious biological contamination
-                inside your vehicle. We treat these incidents with professional bio-cleaning processes
-                to restore hygiene and remove odours at the source.
-              </p>
+            {/* Intro Section - Split Layout */}
+            <div className="flex flex-col xl:flex-row gap-8">
+              <div className="max-w-xl w-full">
+                <h2 className="text-56 text-white leading-tight">Vomit & Pet Mess Clean Up in Dubai</h2>
+              </div>
+              <div className="flex flex-col gap-5 max-w-2xl">
+                <p className="text-white/70 text-lg leading-relaxed">
+                  Accidents from children, passengers, or pets can leave serious biological contamination
+                  inside your vehicle. We treat these incidents with professional bio-cleaning processes
+                  to restore hygiene and remove odours at the source.
+                </p>
+              </div>
             </div>
 
+            {/* Image Card Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="border border-black/5 dark:border-white/10 rounded-3xl p-6 md:p-8 bg-white/80 dark:bg-secondary/40 backdrop-blur-sm">
-                <p className="text-secondary/80 dark:text-white/80">
-                  Immediate containment and extraction of affected liquids and residues from seats,
-                  carpets, and underlay where possible.
-                </p>
+              {/* Card 1: Extraction */}
+              <div className="relative h-80 overflow-hidden group transition-all duration-300">
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                  style={{ backgroundImage: "url('/images/services/interior/vacuuming.png')" }} // Placeholder
+                />
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300" />
+                <div className="relative z-10 h-full p-8 md:p-10 flex flex-col justify-end">
+                  <h3 className="text-white text-2xl font-bold mb-3">Immediate Extraction</h3>
+                  <p className="text-white/90 text-lg leading-relaxed">
+                    Immediate containment and extraction of affected liquids and residues from seats,
+                    carpets, and underlay where possible.
+                  </p>
+                </div>
               </div>
-              <div className="border border-black/5 dark:border-white/10 rounded-3xl p-6 md:p-8 bg-white/80 dark:bg-secondary/40 backdrop-blur-sm">
-                <p className="text-secondary/80 dark:text-white/80">
-                  Use of dedicated bio-cleaning agents to target bacteria, proteins, and organic
-                  matter left behind by vomit or pet mess.
-                </p>
+
+              {/* Card 2: Bio-Cleaning */}
+              <div className="relative h-80 overflow-hidden group transition-all duration-300">
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                  style={{ backgroundImage: "url('/images/services/polishing/machine.png')" }} // Placeholder
+                />
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300" />
+                <div className="relative z-10 h-full p-8 md:p-10 flex flex-col justify-end">
+                  <h3 className="text-white text-2xl font-bold mb-3">Bio-Cleaning Agents</h3>
+                  <p className="text-white/90 text-lg leading-relaxed">
+                    Use of dedicated bio-cleaning agents to target bacteria, proteins, and organic
+                    matter left behind by vomit or pet mess.
+                  </p>
+                </div>
               </div>
-              <div className="border border-black/5 dark:border-white/10 rounded-3xl p-6 md:p-8 bg-white/80 dark:bg-secondary/40 backdrop-blur-sm">
-                <p className="text-secondary/80 dark:text-white/80">
-                  Deep cleaning and sanitization of the affected area to help prevent staining,
-                  lingering odour, and bacterial growth.
-                </p>
+
+              {/* Card 3: Sanitization */}
+              <div className="relative h-80 overflow-hidden group transition-all duration-300">
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                  style={{ backgroundImage: "url('/images/services/polishing/hero.png')" }} // Placeholder
+                />
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300" />
+                <div className="relative z-10 h-full p-8 md:p-10 flex flex-col justify-end">
+                  <h3 className="text-white text-2xl font-bold mb-3">Deep Sanitization</h3>
+                  <p className="text-white/90 text-lg leading-relaxed">
+                    Deep cleaning and sanitization of the affected area to help prevent staining,
+                    lingering odour, and bacterial growth.
+                  </p>
+                </div>
               </div>
-              <div className="border border-black/5 dark:border-white/10 rounded-3xl p-6 md:p-8 bg-white/80 dark:bg-secondary/40 backdrop-blur-sm">
-                <p className="text-secondary/80 dark:text-white/80">
-                  Odour treatment to neutralize smells at a molecular level, leaving the cabin clean
-                  and comfortable again.
-                </p>
+
+              {/* Card 4: Odour Removal */}
+              <div className="relative h-80 overflow-hidden group transition-all duration-300">
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                  style={{ backgroundImage: "url('/images/services/interior/protection.png')" }} // Placeholder
+                />
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300" />
+                <div className="relative z-10 h-full p-8 md:p-10 flex flex-col justify-end">
+                  <h3 className="text-white text-2xl font-bold mb-3">Odour Neutralization</h3>
+                  <p className="text-white/90 text-lg leading-relaxed">
+                    Odour treatment to neutralize smells at a molecular level, leaving the cabin clean
+                    and comfortable again.
+                  </p>
+                </div>
               </div>
             </div>
 
             <div className="flex justify-center pt-8">
-              <a
-                href="/booking"
-                className="bg-primary hover:bg-primary/90 text-secondary font-bold py-3 px-8 rounded-full transition-colors"
-              >
-                Book This Service
-              </a>
+              <NavigationLink
+                navigationTitle="Book This Service"
+                navigationLink="/booking"
+                transform={true}
+              />
             </div>
           </div>
         </div>
