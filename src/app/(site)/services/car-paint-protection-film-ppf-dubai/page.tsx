@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <main>
       <Herobanner
-        bannerimage="/images/services/polishing/hero.png" // Placeholder
+        bannerimage="/images/services/ppf/hero.png"
         heading="Car Paint Protection Film (PPF) Dubai"
         desc="Invisible <span>paint protection film</span> to guard against stone chips, scratches, and road rash."
       />
@@ -39,7 +39,7 @@ export default function Page() {
               <div className="relative h-80 overflow-hidden group transition-all duration-300">
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  style={{ backgroundImage: "url('/images/services/polishing/machine.png')" }} // Placeholder
+                  style={{ backgroundImage: "url('/images/services/ppf/self-healing.png')" }}
                 />
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300" />
                 <div className="relative z-10 h-full p-8 md:p-10 flex flex-col justify-end">
@@ -55,7 +55,7 @@ export default function Page() {
               <div className="relative h-80 overflow-hidden group transition-all duration-300">
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  style={{ backgroundImage: "url('/images/services/interior/protection.png')" }} // Placeholder
+                  style={{ backgroundImage: "url('/images/home/arsenal/equipment-2.png')" }}
                 />
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300" />
                 <div className="relative z-10 h-full p-8 md:p-10 flex flex-col justify-end">
@@ -71,7 +71,7 @@ export default function Page() {
               <div className="relative h-80 overflow-hidden group transition-all duration-300 border border-white/10 hover:border-[#E50914]/50">
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  style={{ backgroundImage: "url('/images/services/polishing/hero.png')" }} // Placeholder
+                  style={{ backgroundImage: "url('/images/home/portfolio/portfolio_img_1.png')" }}
                 />
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300" />
                 <div className="relative z-10 h-full p-8 md:p-10 flex flex-col justify-end">
@@ -87,7 +87,7 @@ export default function Page() {
               <div className="relative h-80 overflow-hidden group transition-all duration-300 border border-white/10 hover:border-[#E50914]/50">
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  style={{ backgroundImage: "url('/images/services/interior/vacuuming.png')" }} // Placeholder
+                  style={{ backgroundImage: "url('/images/home/arsenal/equipment-1.png')" }}
                 />
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300" />
                 <div className="relative z-10 h-full p-8 md:p-10 flex flex-col justify-end">
