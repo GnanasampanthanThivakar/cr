@@ -46,17 +46,17 @@ function Aboutus() {
             <div className="relative bg-primary p-4 2xl:p-7 flex flex-col justify-between gap-8 md:gap-0">
               <div className="relative z-10 flex flex-col gap-2 lg:gap-4">
                 <div>
-                  <StarRating count={4} color="#1F2A2E" />
+                  <StarRating count={4} color="#FFD700" />
                 </div>
-                <p className="dark:text-white">
+                <p className="text-white">
                   Crystal Shine transformed my BMW with professional ceramic
                   coating. The finish is incredible!
                 </p>
               </div>
               <div className="relative z-10">
                 <div className="relative border-b border-secondary/12 pb-5">
-                  <h2 className="dark:text-white">100%</h2>
-                  <p className="text-base text-secondary/70">XPEL Certified</p>
+                  <h2 className="text-white">100%</h2>
+                  <p className="text-base text-white">XPEL Certified</p>
                 </div>
                 <div className="flex items-center gap-2 lg:gap-5 pt-5">
                   <Image
@@ -66,10 +66,10 @@ function Aboutus() {
                     height={64}
                   />
                   <div>
-                    <p className="font-medium dark:text-white">
+                    <p className="font-medium text-white">
                       Ahmed Al Mansoori
                     </p>
-                    <p className="text-base text-secondary/70">BMW Owner</p>
+                    <p className="text-base text-white">BMW Owner</p>
                   </div>
                 </div>
               </div>
@@ -131,7 +131,7 @@ function Aboutus() {
                   className="dark:hidden"
                 />
                 <Image
-                  src={"/images/logo/WhiteLogo.svg"}
+                  src={"/images/logo/logo-white.svg"}
                   alt="Logo Image"
                   height={44}
                   width={160}

@@ -112,6 +112,38 @@ function Services() {
                                         ))}
                                 </div>
                                 <div className="flex flex-wrap items-center gap-4">
+                                    {/* Primary CTA - Most Important Action */}
+                                    <Link href="/services" className="group flex gap-4 items-center w-fit bg-primary border border-primary hover:border hover:border-white/30 hover:bg-secondary rounded-full transition-all duration-200 ease-in-out">
+                                        <span className="pl-8 text-lg font-bold text-white group-hover:text-white group-hover:translate-x-10 transform transition-transform duration-200 ease-in-out">View All Services</span>
+                                        <svg className="py-1 group-hover:-translate-x-36 group-hover:rotate-45 transition-all duration-200 ease-in-out" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g filter="url(#filter0_d_1_873)">
+                                                <rect x="3" y="2" width="52" height="52" rx="26" fill="white" />
+                                                <path d="M24 23H34M34 23V33M34 23L24 33" stroke="#1F2A2E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_d_1_873" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    <feOffset dy="1" />
+                                                    <feGaussianBlur stdDeviation="1.5" />
+                                                    <feComposite in2="hardAlpha" operator="out" />
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_873" />
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_873" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </Link>
+
+                                    {/* Secondary CTA - Optional Action */}
+                                    <Link href="/projects" className="group flex gap-4 items-center w-fit bg-transparent border border-white/30 hover:border-primary hover:bg-primary/10 rounded-full px-6 py-3 transition-all duration-200 ease-in-out">
+                                        <span className="text-lg font-bold text-white group-hover:text-primary transition-colors duration-200">See our Work</span>
+                                        <svg className="group-hover:rotate-45 group-hover:translate-x-1 transition-all duration-200 ease-in-out" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 7H17M17 7V17M17 7L7 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-primary transition-colors duration-200" />
+                                        </svg>
+                                    </Link>
+
+                                    {/* Tertiary Toggle - Show More/Less (conditional) */}
                                     {servicesData?.data?.length > 6 && (
                                         <button
                                             type="button"
@@ -124,53 +156,21 @@ function Services() {
                                                     return next;
                                                 });
                                             }}
-                                            className="group flex gap-4 items-center w-fit bg-transparent border border-white/30 hover:border-primary rounded-full px-6 py-3 text-lg font-bold text-white transition-all duration-200 ease-in-out"
+                                            className="group flex gap-2 items-center w-fit bg-transparent border-none text-white/60 hover:text-white px-2 py-2 transition-all duration-200 ease-in-out"
                                         >
-                                            {showAll ? "Show Less Services" : "Show More Services"}
+                                            <span className="text-base font-medium underline decoration-white/30 group-hover:decoration-white transition-all duration-200">
+                                                {showAll ? "Show Less" : "Show More"}
+                                            </span>
+                                            <svg 
+                                                className={`w-4 h-4 transition-transform duration-200 ${showAll ? 'rotate-180' : ''}`} 
+                                                fill="none" 
+                                                viewBox="0 0 24 24" 
+                                                stroke="currentColor"
+                                            >
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                            </svg>
                                         </button>
                                     )}
-                                    <Link href="/services" className="group flex gap-4 items-center w-fit bg-primary border border-primary hover:border hover:border-white/30 hover:bg-secondary rounded-full transition-all duration-200 ease-in-out">
-                                        <span className="pl-6 text-lg font-bold text-white group-hover:text-white group-hover:translate-x-12 transform transition-transform duration-200 ease-in-out">View All Services</span>
-                                        <svg className={` py-1 group-hover:-translate-x-37 group-hover:rotate-45 transition-all duration-200 ease-in-out `} width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g filter="url(#filter0_d_1_873)">
-                                                <rect x="3" y="2" width="52" height="52" rx="26" fill="white" />
-                                                <path d="M24 23H34M34 23V33M34 23L24 33" stroke="#1F2A2E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                            </g>
-                                            <defs>
-                                                <filter id="filter0_d_1_873" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                                                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                    <feOffset dy="1" />
-                                                    <feGaussianBlur stdDeviation="1.5" />
-                                                    <feComposite in2="hardAlpha" operator="out" />
-                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
-                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_873" />
-                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_873" result="shape" />
-                                                </filter>
-                                            </defs>
-                                        </svg>
-                                    </Link>
-                                    <Link href="/projects" className="group flex gap-4 items-center w-fit bg-primary border border-primary hover:border hover:border-white/30 hover:bg-secondary rounded-full transition-all duration-200 ease-in-out">
-                                        <span className="pl-6 text-lg font-bold text-white group-hover:text-white group-hover:translate-x-12 transform transition-transform duration-200 ease-in-out">See our Work</span>
-                                        <svg className={` py-1 group-hover:-translate-x-37 group-hover:rotate-45 transition-all duration-200 ease-in-out `} width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g filter="url(#filter0_d_1_873)">
-                                                <rect x="3" y="2" width="52" height="52" rx="26" fill="white" />
-                                                <path d="M24 23H34M34 23V33M34 23L24 33" stroke="#1F2A2E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                            </g>
-                                            <defs>
-                                                <filter id="filter0_d_1_873" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                                                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                    <feOffset dy="1" />
-                                                    <feGaussianBlur stdDeviation="1.5" />
-                                                    <feComposite in2="hardAlpha" operator="out" />
-                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
-                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_873" />
-                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_873" result="shape" />
-                                                </filter>
-                                            </defs>
-                                        </svg>
-                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -47,10 +47,10 @@ function Testimonial() {
             <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-7">
               <div className="bg-primary p-4 lg:p-7 flex flex-col gap-32">
                 <div className="flex flex-col gap-6">
-                  <p className="text-base text-secondary/70">
+                  <p className="text-base text-white">
                     {testimonialData?.data_1?.preTitle}
                   </p>
-                  <h4 className="dark:text-white">
+                  <h4 className="text-white">
                     {testimonialData?.data_1?.title}
                   </h4>
                 </div>
@@ -63,10 +63,10 @@ function Testimonial() {
                     className="rounded-full"
                   />
                   <div>
-                    <p className="dark:text-white">
+                    <p className="text-white">
                       {testimonialData?.data_1?.author}
                     </p>
-                    <p className="text-secondary/70 text-base font-normal">
+                    <p className="text-white text-base font-normal">
                       {testimonialData?.data_1?.company}
                     </p>
                   </div>

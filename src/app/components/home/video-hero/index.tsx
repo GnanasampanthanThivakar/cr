@@ -114,46 +114,6 @@ export default function VideoHero() {
               </div>
             </div>
           </div>
-
-          {/* Why Choose Package Section */}
-          <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-4">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-                Why Choose Package?
-              </h2>
-              <p className="text-secondary/70 dark:text-white/70 max-w-3xl">
-                Explore our specialized detailing packages designed to meet your specific needs. Each package delivers exceptional results with premium products and expert care.
-              </p>
-            </div>
-
-            {/* Package Cards Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-              {packages.map((pkg) => (
-                <div
-                  key={pkg.id}
-                  onClick={() => setSelectedPackage(pkg.id)}
-                  className={`relative h-48 md:h-56 lg:h-64 rounded-lg overflow-hidden cursor-pointer group transition-all duration-300 ${
-                    selectedPackage === pkg.id
-                      ? "ring-4 ring-primary"
-                      : "hover:ring-2 hover:ring-primary/50"
-                  }`}
-                >
-                  <Image
-                    src={pkg.image}
-                    alt={pkg.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <h3 className="text-white text-sm md:text-base lg:text-lg font-semibold">
-                      {pkg.title}
-                    </h3>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

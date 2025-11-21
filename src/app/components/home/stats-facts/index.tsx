@@ -1,6 +1,5 @@
 
 "use client";
-import Image from "next/image";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import NavigationLink from "../../shared/navigation-link";
@@ -56,7 +55,7 @@ function StatsFacts() {
                                                 {inView ? <CountUp start={0} end={value.number} duration={3} /> : "0"}
                                                 {value.numberValue && <span>{value.numberValue}</span>}
                                             </h3>
-                                            <p className="text-base text-secondary/70 dark:text-white/70">{value.scoreDescp}</p>
+                            <p className="text-base text-secondary/70 dark:text-white/70">{value.scoreDescp}</p>
                                         </div>
                                     )
                                 })}
@@ -67,10 +66,6 @@ function StatsFacts() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="absolute -bottom-28 -left-20">
-                <Image src={"/images/home/statsfact/sectionbg.png"} alt="image" height={590} width={590} className="dark:hidden" />
-                <Image src={"/images/home/statsfact/sectionbgdark.png"} alt="image" height={590} width={590} className="hidden dark:block" />
             </div>
         </section>
     );
