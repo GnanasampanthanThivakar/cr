@@ -46,32 +46,92 @@ const statsFactData = {
 const servicesData = {
     number: '03',
     name: "Our Services",
-    heading: "Premium Car Detailing & Paint Protection Services",
-    description: "Professional car detailing services using XPEL-certified products and techniques to keep your vehicle looking showroom perfect.",
+    heading: "Specialized Car Detailing & Protection Services in Dubai",
+    description: "From deep interior cleaning to ceramic paint protection and PPF, we offer complete solutions to keep your car looking, smelling, and feeling like new.",
     data: [
         {
             id: 1,
-            image: "/images/home/services/services_1.png",
-            heading: "Ceramic Coating",
-            descp: "Long-lasting protection with advanced ceramic coating technology for a brilliant, mirror-like finish."
+            image: "/images/packages/interior.jpg",
+            heading: "Car Interior Cleaning Dubai",
+            descp: "Complete interior detailing including vacuuming, steam cleaning, and surface treatment to restore a fresh, hygienic cabin.",
+            url: "/services/car-interior-cleaning-dubai"
         },
         {
             id: 2,
-            image: "/images/home/services/services_2.png",
-            heading: "Paint Protection Film (PPF)",
-            descp: "Invisible protection against scratches, chips, and road debris using premium XPEL films."
+            image: "/images/packages/ceramic.jpg",
+            heading: "Car Ceramic Paint Protection Dubai",
+            descp: "Advanced ceramic coating that delivers long-lasting gloss, UV protection, and easier maintenance for your vehicle's paint.",
+            url: "/services/car-ceramic-paint-protection-dubai"
         },
         {
             id: 3,
-            image: "/images/home/services/services_3.png",
-            heading: "Alloy Wheel Repair",
-            descp: "Professional wheel restoration and repair services to bring your wheels back to like-new condition."
+            image: "/images/packages/ppf.jpg",
+            heading: "Car Paint Protection Film (PPF) Dubai",
+            descp: "High-performance PPF installation to protect your paint from stone chips, scratches, and harsh road debris.",
+            url: "/services/car-paint-protection-film-ppf-dubai"
         },
         {
             id: 4,
+            image: "/images/home/services/services_1.png",
+            heading: "Car Seat Shampoo and Stain Removal Dubai",
+            descp: "Deep shampoo and extraction treatment to remove stains, spills, and embedded dirt from fabric and leather seats.",
+            url: "/services/car-seat-shampoo-stain-removal-dubai"
+        },
+        {
+            id: 5,
+            image: "/images/home/services/services_2.png",
+            heading: "Car Smell Removal and Odour Treatment Dubai",
+            descp: "Specialized odour neutralization targeting smoke, food, pet, and moisture smells for a clean, fresh-smelling cabin.",
+            url: "/services/car-smell-removal-odour-treatment-dubai"
+        },
+        {
+            id: 6,
+            image: "/images/home/services/services_3.png",
+            heading: "Car Leather Seat Cleaning Dubai",
+            descp: "Gentle yet effective leather cleaning and conditioning to revive colour, softness, and protection on all leather surfaces.",
+            url: "/services/car-leather-seat-cleaning-dubai"
+        },
+        {
+            id: 7,
             image: "/images/home/services/services_4.png",
-            heading: "Paintless Dent Removal",
-            descp: "Paint-free dent removal techniques that restore your vehicle's appearance without affecting the original paint."
+            heading: "Car Headliner / Roof Cloth Repair Dubai",
+            descp: "Professional repair and refitting of sagging or damaged roof cloth and headliners to factory-like finish.",
+            url: "/services/car-headliner-roof-cloth-repair-dubai"
+        },
+        {
+            id: 8,
+            image: "/images/packages/premium.jpg",
+            heading: "Car Polishing / Detailing / Valet in Dubai",
+            descp: "Multi-stage polishing and full valet service to enhance gloss, remove light defects, and refresh your vehicle inside and out.",
+            url: "/services/car-polishing-detailing-valet-dubai"
+        },
+        {
+            id: 9,
+            image: "/images/home/services/services_1.png",
+            heading: "Car Cement and Tar Removal Dubai",
+            descp: "Safe and thorough removal of cement, tar, and construction fallout without damaging your car's clear coat.",
+            url: "/services/car-cement-tar-removal-dubai"
+        },
+        {
+            id: 10,
+            image: "/images/home/services/services_2.png",
+            heading: "Car Leather Seat Repair",
+            descp: "Restorative leather repair for cracks, scuffs, and minor damage to bring your seats back to a premium look.",
+            url: "/services/car-leather-seat-repair-dubai"
+        },
+        {
+            id: 11,
+            image: "/images/home/services/services_3.png",
+            heading: "Car Paint Scratch Repair",
+            descp: "Targeted scratch correction and paint refinement to reduce or eliminate visible marks and blemishes.",
+            url: "/services/car-paint-scratch-repair-dubai"
+        },
+        {
+            id: 12,
+            image: "/images/home/services/services_4.png",
+            heading: "Vomit / Pet Mess Clean Up",
+            descp: "Emergency bio-cleaning service to safely remove vomit, pet mess, and bacteria with deep sanitization and odour removal.",
+            url: "/services/vomit-pet-mess-clean-up-dubai"
         },
     ]
 };
