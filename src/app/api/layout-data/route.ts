@@ -49,21 +49,24 @@ const MenuData = [
 const footerData = {
     name: "Crystal Shine Auto Center",
     tagline: "Crystal Shine Auto Center | Dubai's Premium Car Detailing Experts",
+    serviceProviders: "We are the service providers for large car dealers like Al Naboodah, Swaidan Trading , Porsche, VW, Audi, Toyota, Arabian Automobiles and Al Ghandhi Autos.",
+    openingHours: "Opens 6 days a week from 7 am to 5pm",
+    sameDayServices: "Same Day Services",
     info: [
         {
             icon: "/images/footer/email-arrow.svg",
-            link: "info@crystalshine.ae",
-            href: "mailto:info@crystalshine.ae"
+            link: "polishdubai@gmail.com",
+            href: "mailto:polishdubai@gmail.com"
         },
         {
             icon: "/images/footer/Location.svg",
-            link: "Dubai, UAE",
+            link: "Exit 45 Sheikh Zayed Road Dubai Near The Oasis Center Mall Dubai",
             href: "https://maps.app.goo.gl/dubai-location"
         },
         {
             icon: "/images/footer/up-arrow.svg",
-            link: "+971 50 123 4567",
-            href: "tel:+971501234567"
+            link: "WhatsApp: 050 428 8468",
+            href: "https://wa.me/971504288468"
         }
     ],
     links: [
@@ -77,7 +80,7 @@ const footerData = {
     socialLinks: [
         { name: "Facebook", href: "https://www.facebook.com/crystalshineautocenter" },
         { name: "Instagram", href: "https://www.instagram.com/crystalshineautocenter" },
-        { name: "WhatsApp", href: "https://wa.me/971XXXXXXXXX" }
+        { name: "WhatsApp", href: "https://wa.me/971504288468" }
     ],
     copyright: "© Crystal Shine Auto Center 2025. All rights reserved."
 };

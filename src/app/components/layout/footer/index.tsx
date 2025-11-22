@@ -19,13 +19,16 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className="bg-secondary py-10 md:py-20 xl:py-40">
+            <div className="bg-secondary py-8 md:py-12 xl:py-16">
                 <div className="container">
-                    <div className="flex flex-col xl:flex-row gap-10 xl:gap-0">
+                    <div className="flex flex-col xl:flex-row gap-8 xl:gap-0">
 
-                        <div className="flex flex-col gap-10 xl:max-w-2xl w-full">
+                        <div className="flex flex-col gap-5 xl:max-w-2xl w-full">
                             {footerData?.tagline &&
                                 <h2 className="text-white xl:max-w-xl">{footerData?.tagline}</h2>
+                            }
+                            {footerData?.serviceProviders &&
+                                <p className="text-white/70 text-base">{footerData?.serviceProviders}</p>
                             }
                             <div className='flex flex-col gap-2'>
                                 {footerData && footerData?.info?.map((value: any, index: any) => {
@@ -38,10 +41,22 @@ const Footer = () => {
                                         </div>
                                     )
                                 })}
+                                {footerData?.openingHours &&
+                                    <div className='flex gap-4'>
+                                        <div className="w-6 h-6" /> {/* Spacer for alignment */}
+                                        <span className='text-white text-lg'>{footerData?.openingHours}</span>
+                                    </div>
+                                }
+                                {footerData?.sameDayServices &&
+                                    <div className='flex gap-4'>
+                                        <div className="w-6 h-6" /> {/* Spacer for alignment */}
+                                        <span className='text-white text-lg font-medium'>{footerData?.sameDayServices}</span>
+                                    </div>
+                                }
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 w-full gap-10 md:gap-0">
+                        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 w-full gap-8 md:gap-0">
                             <ul className='flex flex-col gap-1.5'>
                                 {footerData && footerData?.links?.map((value: any, index: any) => {
                                     return (
