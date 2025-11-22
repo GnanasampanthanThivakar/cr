@@ -1,5 +1,4 @@
 import Herobanner from "@/app/components/shared/hero-banner";
-import NavigationLink from "@/app/components/shared/navigation-link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -100,14 +99,6 @@ export default function Page() {
                   </p>
                 </div>
               </div>
-            </div>
-
-            <div className="flex justify-center pt-8">
-              <NavigationLink
-                navigationTitle="Book This Service"
-                navigationLink="/booking"
-                transform={true}
-              />
             </div>
           </div>
         </div>
