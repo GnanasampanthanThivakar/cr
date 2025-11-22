@@ -85,8 +85,8 @@ function Aboutus() {
             <div className="flex flex-col gap-5 2xl:gap-7">
               <div className="w-full h-full">
                 <Image
-                  src={"/images/home/services/services_2.png"}
-                  alt="Image"
+                  src={"/images/home/aboutusIndex/why_choose_us.png"}
+                  alt="Crystal Shine Car Detailing"
                   width={340}
                   height={215}
                   style={{ width: "100%", height: "100%" }}

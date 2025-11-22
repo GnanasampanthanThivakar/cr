@@ -110,15 +110,6 @@ export default function Page() {
                                 </Link>
                             ))}
                         </div>
-
-                        <div className="pt-6 flex justify-center">
-                            <a
-                                href="/booking"
-                                className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-base font-bold text-white hover:bg-primary/90 transition-colors"
-                            >
-                                Book an Appointment
-                            </a>
-                        </div>
                     </div>
                 </div>
             </section>
