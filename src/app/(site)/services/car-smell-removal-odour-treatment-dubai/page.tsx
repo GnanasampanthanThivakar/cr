@@ -101,12 +101,46 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex justify-center pt-8">
-              <NavigationLink
-                navigationTitle="Book This Service"
-                navigationLink="/booking"
-                transform={true}
-              />
+            <div className="flex flex-col gap-8 mt-10">
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Why Choose Crystal Shine for Odour Removal?</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Source Elimination:</strong> We don't just spray perfume; we find and remove the source of the smell, whether it's trapped in the AC or upholstery.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Safe Neutralizers:</strong> Our ozone and enzyme treatments are safe for your car's interior and effective against organic and chemical odours.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Comprehensive Treatment:</strong> We treat the entire cabin, including headliners, carpets, and ventilation systems, to ensure no smell lingers.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Benefits of Professional Odour Treatment</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Fresh Cabin</h4>
+                    <p className="text-white/70">Restores a neutral, clean scent to your vehicle, making every drive more pleasant.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Healthier Air</h4>
+                    <p className="text-white/70">Eliminates bacteria, mould spores, and allergens that can cause respiratory issues.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Removes Smoke</h4>
+                    <p className="text-white/70">Highly effective at removing stubborn cigarette and shisha smoke smells from fabrics.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Long-Lasting Results</h4>
+                    <p className="text-white/70">By removing the source, we ensure the bad smell doesn't return after a few days.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

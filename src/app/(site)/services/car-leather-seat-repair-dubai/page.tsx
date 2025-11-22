@@ -100,12 +100,46 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex justify-center pt-8">
-              <NavigationLink
-                navigationTitle="Book This Service"
-                navigationLink="/booking"
-                transform={true}
-              />
+            <div className="flex flex-col gap-8 mt-10">
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Why Choose Crystal Shine for Leather Repair?</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Color Matching Technology:</strong> We use advanced colour matching to ensure the repair blends perfectly with your existing leather.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Durable Fillers:</strong> Our flexible fillers and compounds are designed to move with the leather, preventing cracks from reappearing.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Invisible Repairs:</strong> Our goal is to make the damage disappear, restoring the smooth look and feel of your seats.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Benefits of Leather Seat Repair</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Restores Factory Look</h4>
+                    <p className="text-white/70">Brings your worn or damaged seats back to a like-new condition.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Prevents Further Damage</h4>
+                    <p className="text-white/70">Fixing small cracks and tears now prevents them from spreading and requiring expensive reupholstery.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Cost-Effective</h4>
+                    <p className="text-white/70">Repairing is significantly cheaper than replacing the entire seat cover or reupholstering.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Maintains Value</h4>
+                    <p className="text-white/70">Preserves the originality and value of your vehicle, especially for luxury and classic cars.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

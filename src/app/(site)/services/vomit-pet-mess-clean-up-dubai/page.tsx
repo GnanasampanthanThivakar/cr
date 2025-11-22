@@ -101,12 +101,46 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex justify-center pt-8">
-              <NavigationLink
-                navigationTitle="Book This Service"
-                navigationLink="/booking"
-                transform={true}
-              />
+            <div className="flex flex-col gap-8 mt-10">
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Why Choose Crystal Shine for Bio-Hazard Cleanup?</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Bio-Hazard Specialists:</strong> We are trained to handle biological messes safely and effectively, ensuring no trace remains.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Deep Extraction:</strong> Our powerful machines extract liquids from deep within the foam padding, not just the surface fabric.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Odour Elimination:</strong> We don't mask smells; we use enzymes and ozone treatment to kill the bacteria causing the odour.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Benefits of Professional Cleanup</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Hygienic Interior</h4>
+                    <p className="text-white/70">Restores a safe, sanitary environment for you and your family.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Safe for Family</h4>
+                    <p className="text-white/70">Removes harmful bacteria and pathogens that can cause illness.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Eliminates Bacteria</h4>
+                    <p className="text-white/70">Stops bacterial growth in its tracks, preventing mould and mildew formation.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Removes Stains</h4>
+                    <p className="text-white/70">Prompt professional cleaning is the best way to prevent permanent staining on upholstery.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

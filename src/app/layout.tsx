@@ -31,20 +31,15 @@ export default function RootLayout({
     });
   }, [pathname]);
 
-  const excludedRoutes = ["/signin", "/signup", "/forgot-password","/documentation"];
-  const hideLayout = excludedRoutes.includes(pathname) || is404;
-
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={manrope.className}>
-        {/* <SessionProvider> Disabled for static export */}
-          <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
-            {!hideLayout && <Header />}
-            {children}
-            {!hideLayout && <Footer />}
-            <ScrollToTop />
-          </ThemeProvider>
-        {/* </SessionProvider> */}
+        <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
+          <Header />
+          {children}
+          <Footer />
+          <ScrollToTop />
+        </ThemeProvider>
       </body>
     </html>
   );

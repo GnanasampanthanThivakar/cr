@@ -102,12 +102,46 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex justify-center pt-8">
-              <NavigationLink
-                navigationTitle="Book This Service"
-                navigationLink="/booking"
-                transform={true}
-              />
+            <div className="flex flex-col gap-8 mt-10">
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Why Choose Crystal Shine for Interior Cleaning?</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Deep Extraction:</strong> We don't just wipe surfaces; we extract deep-seated dirt and allergens from carpets and upholstery.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Safe Chemicals:</strong> We use pH-balanced, interior-safe cleaners that are tough on stains but gentle on your car's delicate materials.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Odor Elimination:</strong> Our process targets the source of odors, leaving your cabin smelling fresh and neutral, not just masked with perfume.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Benefits of Professional Interior Detailing</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Healthier Environment</h4>
+                    <p className="text-white/70">Removes dust mites, bacteria, and allergens, improving air quality for you and your passengers.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Stain Removal</h4>
+                    <p className="text-white/70">Effective treatment for coffee spills, food stains, and ink marks to restore your upholstery.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Material Protection</h4>
+                    <p className="text-white/70">Conditions leather and protects plastics from UV cracking and fading.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Resale Value</h4>
+                    <p className="text-white/70">A well-maintained interior is a key factor in determining your vehicle's resale price.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

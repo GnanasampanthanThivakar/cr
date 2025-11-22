@@ -4,13 +4,10 @@ import MenuList from "./MenuList";
 import Link from "next/link";
 import ThemeToggler from "./ThemeToggle";
 import { usePathname } from "next/navigation";
-import { signOut } from "next-auth/react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Logo from "../logo";
 
 const Header = () => {
-    // const { data: session } = useSession(); // Disabled for static export
-    const [user, setUser] = useState<{ user: any } | null>(null);
     const [menuData, setMenuData] = useState<any>(null);
     const [menuOpen, setMenuOpen] = useState(false);
     const [isClosing, setIsClosing] = useState(false); // Track closing animation
@@ -24,20 +21,10 @@ const Header = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
-        const storedUser = localStorage.getItem("user");
-        if (storedUser) {
-            setUser(JSON.parse(storedUser));
-        }
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, [pathname]);
-
-    const handleSignOut = () => {
-        localStorage.removeItem("user");
-        signOut();
-        setUser(null);
-    };
 
     // Close menu with animation when clicking outside
     useEffect(() => {
@@ -82,23 +69,6 @@ const Header = () => {
                     <div className="flex items-center gap-7">
                         <div className="flex item-center gap-3">
                             <ThemeToggler />
-                            {user?.user ? (
-                                <div className="relative group flex items-center justify-center">
-                                    <Image
-                                        src="/images/avatar/avatar_1.jpg"
-                                        alt="Image"
-                                        width={35}
-                                        height={35}
-                                        quality={100}
-                                        className="rounded-full cursor-pointer "
-                                    />
-                                    <p
-                                        className="absolute w-fit text-sm font-medium text-center z-10 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-200 bg-gray text-white py-1 px-2 min-w-28 rounded-full shadow-2xl top-full left-1/2 transform -translate-x-1/2 mt-3"
-                                    >
-                                        {user?.user?.name}
-                                    </p>
-                                </div>
-                            ) : ('')}
                         </div>
 
                         <div className="relative flex align-middle">
@@ -123,19 +93,10 @@ const Header = () => {
                                     </div>
                                     <div>
                                         <ul className="flex flex-col gap-2 pb-4">
-                                            {menuData?.map((menuItem:any, index:any) =>
+                                            {menuData?.map((menuItem: any, index: any) =>
                                                 <MenuList key={index} item={menuItem} closeMenu={() => setMenuOpen(false)} />
                                             )}
                                         </ul>
-
-                                        {user?.user ? (
-                                            <div className="flex flex-col gap-2">
-                                                <button onClick={() => handleSignOut()} className="flex justify-center items-center cursor-pointer gap-2 text-white hover:text-white dark:text-white dark:border dark:border-primary dark:hover:text-white bg-primary dark:hover:bg-transparent dark:hover:border dark:hover:border-white hover:bg-secondary text-xl font-bold rounded-full py-2.5 px-4.5 transition-all duration-300 ease-in-out">
-                                                    Sign Out
-                                                    <Icon icon="solar:logout-outline" width="25" height="25" />
-                                                </button>
-                                            </div>
-                                        ) : null}
                                     </div>
                                     <div>
                                         <Link href="tel:+971501234567" className="text-secondary/60 dark:text-white/60 hover:text-secondary dark:hover:text-white">+971 50 123 4567</Link>

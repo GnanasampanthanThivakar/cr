@@ -101,12 +101,46 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex justify-center pt-8">
-              <NavigationLink
-                navigationTitle="Book This Service"
-                navigationLink="/booking"
-                transform={true}
-              />
+            <div className="flex flex-col gap-8 mt-10">
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Why Choose Crystal Shine for Leather Cleaning?</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>pH Balanced Cleaners:</strong> We use safe, pH-neutral cleaners that effectively remove dirt without damaging the leather's protective top coat.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Premium Conditioners:</strong> Our conditioners penetrate deep into the pores to nourish the leather and keep it soft and flexible.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Gentle Process:</strong> We use soft brushes and microfiber towels to clean delicate leather without causing scratches or wear.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Benefits of Professional Leather Cleaning</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Softens Leather</h4>
+                    <p className="text-white/70">Restores the natural softness and suppleness of your leather seats.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Prevents Cracking</h4>
+                    <p className="text-white/70">Regular conditioning keeps the leather hydrated, preventing it from drying out and cracking in the sun.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Removes Grime</h4>
+                    <p className="text-white/70">Lifts embedded dirt, body oils, and denim dye transfer that can make leather look dull and dirty.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">UV Protection</h4>
+                    <p className="text-white/70">Many of our conditioners include UV blockers to protect your leather from fading and sun damage.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -14,26 +14,26 @@ import Testimonial from "./components/home/testimonial";
 import Logoslider from "./components/home/pricing/Logoslider";
 
 export const metadata: Metadata = {
-    title: "Crystal Shine Auto Center | Premium Car Detailing in Dubai",
-    description: "Dubai's trusted car detailing experts since 2009. Professional ceramic coating, PPF, alloy wheel repair, and paintless dent removal services."
+  title: "Crystal Shine Auto Center | Premium Car Detailing in Dubai",
+  description: "Dubai's trusted car detailing experts since 2009. Professional ceramic coating, PPF, alloy wheel repair, and paintless dent removal services."
 };
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <StatsFacts/>
+      <StatsFacts />
       <Logoslider />
-      <Portfolio/>
-      <Services/>
-      <Aboutus/>
-      <Testimonial/>
-      <Arsenal arsenalNumber="06"/>
-      <VideoHero/>
-      <BeforeAfterSection/>
-      <Faq/>
-      <Resources/>
-      <Contact contactdataNumber="10"/>
+      <Portfolio />
+      <Services />
+      <Aboutus />
+      <Testimonial />
+      <Arsenal arsenalNumber="06" />
+      <VideoHero />
+      <BeforeAfterSection />
+      <Faq />
+      <Resources />
+      <Contact contactdataNumber="10" />
     </>
   );
 }

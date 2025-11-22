@@ -101,12 +101,46 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex justify-center pt-8">
-              <NavigationLink
-                navigationTitle="Book This Service"
-                navigationLink="/booking"
-                transform={true}
-              />
+            <div className="flex flex-col gap-8 mt-10">
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Why Choose Crystal Shine for Scratch Repair?</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Expert Assessment:</strong> We honestly assess whether a scratch can be polished out or requires a touch-up, saving you from unnecessary repainting.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Multi-Stage Polishing:</strong> We use progressively finer polishes to remove scratches while leaving a brilliant, swirl-free finish.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Precision Touch-Ups:</strong> For deeper chips, we use color-matched paint and fine brushes to fill and blend the damage.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Benefits of Professional Scratch Repair</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Improves Appearance</h4>
+                    <p className="text-white/70">Significantly reduces the visibility of unsightly white scratch marks on your paint.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Protects Against Rust</h4>
+                    <p className="text-white/70">Sealing deep scratches prevents moisture from reaching the metal and causing rust bubbles.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Cost-Effective Solution</h4>
+                    <p className="text-white/70">A much more affordable alternative to repainting an entire panel for minor damage.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Restores Resale Value</h4>
+                    <p className="text-white/70">A car with well-maintained paintwork commands a higher price and sells faster.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

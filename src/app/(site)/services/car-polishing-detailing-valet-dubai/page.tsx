@@ -100,12 +100,46 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex justify-center pt-8">
-              <NavigationLink
-                navigationTitle="Book This Service"
-                navigationLink="/booking"
-                transform={true}
-              />
+            <div className="flex flex-col gap-8 mt-10">
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Why Choose Crystal Shine for Car Polishing?</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Paint Correction Specialists:</strong> We specialize in restoring neglected paintwork, removing swirl marks, scratches, and oxidation.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Multi-Stage Process:</strong> We use a tailored multi-stage polishing process to achieve the highest possible level of gloss and clarity.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Showroom Finish:</strong> Our goal is to return your vehicle to a better-than-new condition, ready for a car show or resale.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Benefits of Professional Polishing</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Restores Gloss</h4>
+                    <p className="text-white/70">Removes the dull, hazy layer of oxidation to reveal the vibrant color beneath.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Removes Defects</h4>
+                    <p className="text-white/70">Eliminates unsightly swirl marks, fine scratches, and holograms for a mirror-like reflection.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Smooth Surface</h4>
+                    <p className="text-white/70">Leaves your paint feeling glass-smooth, preventing dirt from sticking easily.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Prepares for Protection</h4>
+                    <p className="text-white/70">The essential first step before applying ceramic coating or PPF for maximum bonding.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

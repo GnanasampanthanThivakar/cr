@@ -101,12 +101,46 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex justify-center pt-8">
-              <NavigationLink
-                navigationTitle="Book This Service"
-                navigationLink="/booking"
-                transform={true}
-              />
+            <div className="flex flex-col gap-8 mt-10">
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Why Choose Crystal Shine for Cement & Tar Removal?</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Safe Chemical Removal:</strong> We use specialized dissolving agents that break down cement and tar without harming your paintwork.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Paint Depth Analysis:</strong> We assess your paint's condition to ensure our removal methods are safe and effective.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Complete Decontamination:</strong> We remove every trace of fallout from paint, glass, wheels, and plastic trims.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Benefits of Professional Decontamination</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Restores Smoothness</h4>
+                    <p className="text-white/70">Removes the rough, gritty texture caused by bonded contaminants, leaving your paint glass-smooth.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Prevents Permanent Damage</h4>
+                    <p className="text-white/70">Cement and bird droppings can etch into the clear coat if left untreated; we remove them before they cause lasting harm.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Prepares for Polishing</h4>
+                    <p className="text-white/70">A perfectly clean surface is essential before any machine polishing or ceramic coating application.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Safe for All Surfaces</h4>
+                    <p className="text-white/70">Our methods are safe for matte paints, PPF, and vinyl wraps as well as standard gloss finishes.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

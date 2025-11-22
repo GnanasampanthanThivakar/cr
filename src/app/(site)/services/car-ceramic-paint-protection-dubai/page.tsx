@@ -101,12 +101,46 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex justify-center pt-8">
-              <NavigationLink
-                navigationTitle="Book This Service"
-                navigationLink="/booking"
-                transform={true}
-              />
+            <div className="flex flex-col gap-8 mt-10">
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Why Choose Crystal Shine for Ceramic Coating?</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Certified Installers:</strong> Our team is trained and certified in applying professional-grade ceramic coatings for maximum durability.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Premium Products:</strong> We use only top-tier ceramic formulations that offer superior hardness and longevity compared to consumer-grade products.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-white/80"><strong>Warranty Protection:</strong> Enjoy peace of mind with our warranty-backed packages that guarantee the performance of your coating.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-bold text-white mb-6">Benefits of Ceramic Paint Protection</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Extreme Gloss</h4>
+                    <p className="text-white/70">Enhances the depth and clarity of your paint, giving it a permanent "wet look" shine.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">UV Resistance</h4>
+                    <p className="text-white/70">Prevents paint oxidation and fading caused by Dubai's harsh sun and UV rays.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Chemical Resistance</h4>
+                    <p className="text-white/70">Protects against bird droppings, tree sap, and road salts that can etch your clear coat.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">Self-Cleaning Effect</h4>
+                    <p className="text-white/70">Dirt and grime slide off easily, keeping your car cleaner for longer and making washes effortless.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
