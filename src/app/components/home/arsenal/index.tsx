@@ -44,7 +44,7 @@ const Arsenal = (props: { arsenalNumber: string }) => {
                             {arsenalData?.equipment?.map((item: any, index: any) => {
                                 return (
                                     <div key={index} className="group flex flex-col gap-6">
-                                        <div className="relative overflow-hidden rounded-lg aspect-[4/5] bg-gray/10">
+                                        <div className="relative overflow-hidden aspect-[4/5] bg-gray/10">
                                             <Image 
                                                 src={item?.image} 
                                                 alt={item?.name} 

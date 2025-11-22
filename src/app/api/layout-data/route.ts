@@ -27,20 +27,8 @@ const MenuData = [
   },
   {
     id: 5,
-    title: "Services",
-    path: "/#services",
-    newTab: false,
-  },
-  {
-    id: 6,
     title: "Contact",
     path: "/contact",
-    newTab: false,
-  },
-  {
-    id: 7,
-    title: "Booking",
-    path: "/booking",
     newTab: false,
   }
 ];
@@ -74,7 +62,6 @@ const footerData = {
         { name: "About", href: "/about" },
         { name: "Services", href: "/#services" },
         { name: "Gallery", href: "/projects" },
-        { name: "Book Now", href: "/booking" },
         { name: "Contact", href: "/contact" }
     ],
     socialLinks: [
