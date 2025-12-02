@@ -8,15 +8,26 @@ function HeroSection() {
         <ParallaxProvider>
             <Parallax speed={-25}>
                 <section className="relative flex items-end text-white bg-black h-full min-h-screen">
-                    {/* Background Video */}
+                    {/* Desktop Background Video */}
                     <video
-                        className="absolute top-0 left-0 w-full h-full object-cover"
+                        className="hidden md:block absolute top-0 left-0 w-full h-full object-cover"
                         loop
                         autoPlay
                         muted
                         playsInline
                     >
                         <source src="/video/v6.mp4" type="video/mp4" />
+                    </video>
+
+                    {/* Mobile Background Video */}
+                    <video
+                        className="block md:hidden absolute top-0 left-0 w-full h-full object-cover"
+                        loop
+                        autoPlay
+                        muted
+                        playsInline
+                    >
+                        <source src="/video/mobilebanner.mp4" type="video/mp4" />
                     </video>
 
                     {/* Overlay to improve text readability */}

@@ -2,9 +2,9 @@ import { Blog } from "@/app/api/blogs-data/data";
 import Image from "next/image";
 import Link from "next/link";
 
-const BlogCard = ({ blog }: { blog: Blog }) => {
+const BlogCard = ({ blog, variant = "default" }: { blog: Blog; variant?: "primary" | "secondary" | "default" }) => {
     return (
-        <Link 
+        <Link
             href={`/blogs/${blog.id}`}
             className="group flex flex-col h-full"
         >
