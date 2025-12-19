@@ -45,18 +45,23 @@ const footerData = {
   info: [
     {
       icon: "/images/footer/email-arrow.svg",
-      link: "info@crystalshine.ae",
-      href: "mailto:info@crystalshine.ae"
+      link: "polishdubai@gmail.com",
+      href: "mailto:polishdubai@gmail.com"
     },
     {
       icon: "/images/footer/Location.svg",
-      link: "Dubai, UAE",
+      link: "Exit 45, Sheikh Zayed Road Dubai, Near The Oasis Center Mall, Dubai, U.A.E.",
       href: "https://maps.app.goo.gl/dubai-location"
     },
     {
       icon: "/images/footer/up-arrow.svg",
-      link: "+971 50 123 4567",
-      href: "tel:+971501234567"
+      link: "+971 – 50 – 428 8468",
+      href: "tel:+971504288468"
+    },
+    {
+      icon: "/images/footer/up-arrow.svg",
+      link: "+971 – 4 – 338 3303",
+      href: "tel:+97143383303"
     }
   ],
   links: [

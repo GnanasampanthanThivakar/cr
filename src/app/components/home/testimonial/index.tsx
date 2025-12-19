@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import StarRating from "../../shared/star-rating";
+import { FaStar } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 function Testimonial() {
@@ -41,6 +42,24 @@ function Testimonial() {
                     Real experiences from Dubai's car owners who trust Crystal
                     Shine with their prized vehicles.
                   </p>
+                  {testimonialData?.googleReviews && (
+                    <div className="flex items-center flex-wrap gap-3">
+                      <span className="text-lg font-semibold text-secondary dark:text-white">
+                        {testimonialData.googleReviews.rating}
+                      </span>
+                      <div className="flex gap-1 text-[#F4B400]">
+                        {[...Array(5)].map((_, i) => (
+                          <FaStar key={i} className="text-sm" />
+                        ))}
+                      </div>
+                      <span className="text-base text-secondary dark:text-white">
+                        {testimonialData.googleReviews.count}
+                        <span className="text-blue-600 dark:text-blue-400 ml-1">
+                          {testimonialData.googleReviews.text}
+                        </span>
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

@@ -1,0 +1,51 @@
+﻿git : remote: error: 
+Trace: b996667da538b8
+08f9c97b9e636d1ee4707
+783f5e3b57c939d1a279c
+7f1fff33        
+At line:1 char:1
++ git push 2>&1 | 
+Out-File -Encoding 
+utf8 output.txt
++ ~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (remote:   
+  error: ...f1fff    
+33        :Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+remote: error: See 
+https://gh.io/lfs 
+for more 
+information.        
+remote: error: File p
+ublic/images/video-he
+ro/v7.mp4 is 143.85 
+MB; this exceeds 
+GitHub's file size 
+limit of 100.00 MB   
+     
+remote: error: 
+GH001: Large files 
+detected. You may 
+want to try Git 
+Large File Storage - 
+https://git-lfs.githu
+b.com.        
+To https://github.com
+/Piranavan2000/crysta
+lupdate.git
+ ! [remote rejected] 
+main -> main 
+(pre-receive hook 
+declined)
+error: failed to 
+push some refs to 'ht
+tps://github.com/Pira
+navan2000/crystalupda
+te.git'

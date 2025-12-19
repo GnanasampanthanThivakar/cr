@@ -40,7 +40,7 @@ const statsFactData = {
             numberValue: '%',
             scoreDescp: "XPEL Certified Experts"
         },
-    ]
+    ],
 };
 
 const servicesData = {
@@ -137,6 +137,11 @@ const servicesData = {
 };
 
 const testimonialData = {
+    googleReviews: {
+        rating: 4.8,
+        count: "1,318",
+        text: "Google reviews"
+    },
     data_1: {
         preTitle: "Hear from them",
         title: "Crystal Shine transformed my Range Rover with ceramic coating. The protection is unbelievable!",

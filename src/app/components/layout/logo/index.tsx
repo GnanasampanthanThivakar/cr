@@ -6,12 +6,13 @@ const Logo = (props: { sticky: boolean }) => {
     return (
         <Link href="/">
             {/* Light Mode Logo */}
+            {/* Light Mode Logo */}
             <Image
-                src="/images/logo/logo-black.svg"
+                src="/images/logo/logo-white.svg"
                 alt="Crystal Shine Auto Center Logo"
                 width={190}
                 height={34}
-                style={{ width: '100%', maxWidth: '190px', height: 'auto' }}
+                style={{ width: '100%', maxWidth: '190px', height: 'auto', filter: 'invert(1)' }}
                 quality={100}
                 priority={true}
                 className='dark:hidden'

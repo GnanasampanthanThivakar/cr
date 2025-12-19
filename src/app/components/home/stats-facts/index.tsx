@@ -3,6 +3,7 @@
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import NavigationLink from "../../shared/navigation-link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 function StatsFacts() {
@@ -66,6 +67,10 @@ function StatsFacts() {
                         </div>
                     </div>
                 </div>
+            </div>
+              <div className="absolute -bottom-28 -left-20">
+                <Image src={"/images/home/statsfact/sectionbg.png"} alt="image" height={590} width={590} className="dark:hidden" />
+                <Image src={"/images/home/statsfact/sectionbgdark.png"} alt="image" height={590} width={590} className="hidden dark:block" />
             </div>
         </section>
     );
