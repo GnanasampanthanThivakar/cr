@@ -1,18 +1,34 @@
 "use client";
-import { getAllBlogs } from "@/lib/blogmarkdown";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const BlogList = () => {
     type Blog = {
+        id: number;
         title: string;
-        slug: string;
         date: string;
-        coverImage: string;
-        excerpt?: string;
+        image: string;
+        summary: string;
+        content: string;
+        author: string;
     };
 
-    const Blogs: Blog[] = getAllBlogs(["title", "slug", "coverImage", "date", "excerpt"]);
+    const [blogs, setBlogs] = useState<Blog[]>([]);
+
+    useEffect(() => {
+        const fetchBlogs = async () => {
+            try {
+                const res = await fetch('/api/blogs-data');
+                if (!res.ok) throw new Error('Failed to fetch');
+                const data = await res.json();
+                setBlogs(data || []);
+            } catch (error) {
+                console.error('Error fetching blogs:', error);
+            }
+        };
+        fetchBlogs();
+    }, []);
 
     return (
         <section className="bg-secondary py-20 md:py-40">
@@ -42,7 +58,7 @@ const BlogList = () => {
 
                         {/* Blog Grid */}
                         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-                            {Blogs.map((value, index) => {
+                            {blogs.map((value, index) => {
                                 const formattedDate = new Date(value.date).toLocaleDateString("en-US", {
                                     day: "2-digit",
                                     month: "short",
@@ -51,14 +67,14 @@ const BlogList = () => {
 
                                 return (
                                     <Link 
-                                        href={`/blog/${value.slug}`} 
+                                        href={`/blogs/${value.id}`} 
                                         key={index} 
                                         className="group flex flex-col h-full"
                                     >
                                         <div className="flex flex-col gap-5 h-full border-t border-white/12 pt-6 hover:border-primary/50 transition-colors duration-300">
                                             <div className="w-full h-60 overflow-hidden relative">
                                                 <Image
-                                                    src={value.coverImage}
+                                                    src={value.image}
                                                     alt={value.title}
                                                     width={805}
                                                     height={450}
@@ -69,8 +85,8 @@ const BlogList = () => {
                                             <div className="flex flex-col gap-3 flex-grow">
                                                 <span className="text-sm text-white/60">{formattedDate}</span>
                                                 <h3 className="text-white group-hover:text-primary transition-colors line-clamp-2">{value.title}</h3>
-                                                {value.excerpt && (
-                                                    <p className="text-white/70 text-base line-clamp-3">{value.excerpt}</p>
+                                                {value.summary && (
+                                                    <p className="text-white/70 text-base line-clamp-3">{value.summary}</p>
                                                 )}
                                                 <div className="flex items-center text-primary font-medium mt-auto">
                                                     Read Article
